@@ -8,11 +8,11 @@ function timeblockDisplay() {
     for (var i = 0; i < hourContainer.length; i++) {
         $(".container").append(
             `<div class="row">
-                <div id="hour" class="hour col-sm-1 p-2 text-right">${hourContainer[i]}</div>
-                <div id="event" class="past present future col-sm-10">
-                    <textarea class="w-100 h-100">text</textarea>
+                <div id="" class="hour col-sm-1 p-2 text-right">${hourContainer[i]}</div>
+                <div id="" class="past present future col-sm-10">
+                    <textarea id="textArea${hourContainer[i]}" class="w-100 h-100"></textarea>
                 </div>
-                <button id="saveBtn" class="saveBtn col-sm-1">
+                <button id="" class="saveBtn col-sm-1" value="${hourContainer[i]}">
                     <i class="fa fa-save"></i> 
                 </button>
             </div>`);
@@ -23,3 +23,10 @@ timeblockDisplay();
 
 
 $("#currentDay").append(currentDay);
+
+$(document.body).on('click', '.saveBtn', function() {
+    var saveBtnValue = $(this).val();
+    var userChoice = $(`#textArea${saveBtnValue}`).val();
+    console.log(userChoice);
+    //usersAnswerChoice(userChoice);
+});
