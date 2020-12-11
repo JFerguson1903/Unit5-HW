@@ -3,8 +3,9 @@ var currentDay = luxon.DateTime.local().toFormat('cccc, LLLL dd')
 
 var hourContainer = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"];
 
-function timeblockDisplay() {
 
+function timeblockDisplay() {
+    // Looping through each hourContrainer item and appending a div that includes a save button
     for (var i = 0; i < hourContainer.length; i++) {
         $(".container").append(
             `<div class="row">
@@ -19,14 +20,15 @@ function timeblockDisplay() {
     }
 }
 
+// Calling the function
 timeblockDisplay();
 
-
+// Appending the currentDayto the HTML in the "#currentDay" div
 $("#currentDay").append(currentDay);
 
+// On Click event listener for saveBtn
 $(document.body).on('click', '.saveBtn', function() {
     var saveBtnValue = $(this).val();
     var userChoice = $(`#textArea${saveBtnValue}`).val();
     console.log(userChoice);
-    //usersAnswerChoice(userChoice);
 });
