@@ -20,11 +20,11 @@ The additional acceptance criteria was as follows:
 
 Below is an image that shows what was requested for the application's appearance and functionality: 
 
-![Work Day Scheduler demo](![image](https://user-images.githubusercontent.com/72481828/101996122-30b69d80-3c95-11eb-9826-cb9e45612d02.png)
+![Work Day Scheduler demo](https://user-images.githubusercontent.com/72481828/101996122-30b69d80-3c95-11eb-9826-cb9e45612d02.png)
 
 ## Credits
 
-* [Bootstrap] v4.3.1(https://getbootstrap.com/)
+* [Bootstrap](https://getbootstrap.com/)
 
 * [Luxon](https://moment.github.io/luxon/)
 
