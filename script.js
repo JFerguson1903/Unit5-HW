@@ -32,11 +32,11 @@ function timeblockDisplay() {
         // Append divs as needed from the for loop
         $(".container").append(
             `<div class="row">
-                <div id="" class="hour col-sm-1 p-2 text-right">${hourContainer[i]}</div>
-                <div id="" class="${hourGhost} col-sm-10 px-0">
+                <div id="" class="hour col-2 col-md-1 p-2 text-right">${hourContainer[i]}</div>
+                <div id="" class="${hourGhost} col-9 col-md-10 px-0">
                     <textarea id="textArea${hourContainer[i]}" class="w-100 h-100">${previouslySavedText}</textarea>
                 </div>
-                <button id="" class="saveBtn col-sm-1" value="${hourContainer[i]}">
+                <button id="" class="saveBtn col-1" value="${hourContainer[i]}">
                     <i class="fa fa-save"></i> 
                 </button>
             </div>`);

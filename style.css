@@ -44,7 +44,7 @@ textarea {
 }
 
 
-/*conditional classes*/
+/*conditional classes for variable hourGhost*/
 
 .past {
     background-color: #d3d3d3;
