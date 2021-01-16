@@ -3,7 +3,7 @@ var currentDay = luxon.DateTime.local().toFormat('cccc, LLLL dd')
 var localStorageKeyDate = luxon.DateTime.local().toFormat('LL-dd-yyyy');
 
 // Assigning variable for hourContainer array
-var hourContainer = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"];
+const hourContainer = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"];
 
 // Setting a function for running the page
 function timeblockDisplay() {
